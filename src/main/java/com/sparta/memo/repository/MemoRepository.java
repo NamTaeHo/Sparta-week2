@@ -18,7 +18,6 @@ public class MemoRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-
     public MemoRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -85,6 +84,4 @@ public class MemoRepository {
             }
         }, id);
     }
-
-
 }
