@@ -9,6 +9,7 @@ import java.util.List;
 @Repository
 public interface MemoRepository extends JpaRepository<Memo, Long> {
     List<Memo> findAllByOrderByModifiedAtDesc();
+    List<Memo> findAllByContentsContaining(String contents);
 //    List<Memo> findAllByUsername(String username);
 
 }
